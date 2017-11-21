@@ -2,7 +2,7 @@
 Parses terraform binary plan and prints it out
 
 ## Usage
-./tfplanparser -path=<path to terraform plan>
+./tfplanparser -path="path to terraform plan"
 
 ```
 # ./tfplanparser -path=tfplan
