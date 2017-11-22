@@ -18,6 +18,8 @@ func main() {
 	}
 
 	f, _ := os.Open(*filePath)
+	defer f.Close()
+
 	plan, err := terraform.ReadPlan(f)
 	if err != nil {
 		fmt.Println(err)
