@@ -25,6 +25,8 @@ func main() {
 		fmt.Println(err)
 	}
 
+	fmt.Println(plan)
+
 	resources := plan.Diff.Modules[0].Resources
 
 	for k, v := range resources {
